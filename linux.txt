@@ -1,0 +1,370 @@
+ctrl shift ++
+
+cd
+pwd
+mkdir indra
+touch test.txt
+ls -l -t (sort last modified date n time) -r (reverse)
+ls -ltr
+
+man command (manual)
+
+ls -a (.filename)
+
+d - directory
+- - filename
+
+rm
+rmdir
+
+cd.. (back)
+cd - (earlier path)
+
+
+
+3rd class
+
+rm
+
+rm -r directory -f force skip warnings
+
+rmdir
+
+
+cp source destination
+
+relative path 
+full path
+
+
+mv source destination  move an rename
+
+
+
+zip
+
+will archive and compress
+zip indra.zip f1 f2 f3
+
+unzip indra.zip
+
+
+tar
+
+will archive, will not compress
+tar -cvf indra.tar f1 f2 f3
+c - create
+v - vergoes print (see)
+f - file
+
+
+
+xvf - extract
+
+
+
+vim - editor
+
+cat - reader
+
+grep -in "ERROR" filgafe.txt
+
+-i - ignore
+-n - line number
+-v - reverse
+
+
+
+-A 2 after 2 lines of leading context
+-B 2 before 2 lines
+
+
+
+sed - find and replace
+
+sed -i s/this word/with this word/ fetch.txt
+
+
+
+
+head (top 10 lines)
+
+head filename
+head -2 filename
+
+
+
+tail (bottom 10 lines)
+tail filename
+tail -2 filename
+
+
+
+head -20 filename | tail -1
+to get the data in line number 20.
+
+| pipe will combain both the commands
+
+
+
+
+cut
+
+indra 1234 dev
+ganesh 2345 test
+kaay 3456 sup
+
+cut -d " " -f1 user.txt
+indra
+ganesh
+kaay
+
+
+d - delimiter
+"" - seperator (space or : or any seperator)
+f1 - field 1
+f2 - field 2
+fn - field n (number)
+
+
+cat user.txt | cut -d " " -f1 | sed s/indra/INDRA/
+
+
+
+
+diff filename1 filename2 (compare)
+
+vimdiff filename1 filename2
+
+
+
+find . -name "filename" (. - current directory)
+
+find path -name "filename"
+
+find path -type d -name "directoryname"
+
+
+find / -name "filename" (in entire system)
+
+
+Linux - Ubuntu
+sudo apt-get update
+sudo apt-get install git
+apt-get (pkg mgmt tool)
+
+
+Linux - CentOS
+sudo yum update
+sudo yum install git
+
+
+which git - where it is installed
+
+
+
+
+su - switch user
+
+sudo su - switch to root user
+
+
+chmod - change mode
+
+ls -ltr
+
+
+Read - r - 4
+Write - w - 2
+Execute - x - 1
+
+total - 7
+
+permissions:
+
+rwx		| rwx	| rwx
+owner	| gruop | others
+
+chmod 775 file/directory name
+
+
+indra@VM:/media/sf_E_Drive$ ls -ltr
+total 1048
+
+permisions	owner	gruop	size	modified date	file/directory name
+-rwxrwx--- 1 root vboxsf 233022 Feb  7  2025  'BC Loan.pdf'
+
+
+
+chown - change owner
+chown harry:harry file/directory name
+
+sudo chown indra:indra file/directory name
+
+
+useradd - create new user
+
+
+sudo useradd -md /home/pavi -s /bin/bash pavi
+
+sudo passwd pavi - to set the password for user pavi
+
+md - make directory
+s - shell
+
+
+id pavi - to check the user is existing or not
+
+
+df - to check the drive space
+
+df . - to check the drive space in of current working drive
+
+du - disk used
+
+du -h file/directory name
+
+
+du -sh file/directory name
+
+s - summarized
+h - human nderstandable
+
+
+
+free - to check RAM
+
+free -h
+
+
+lscpu - to check CPU details
+
+top - to check CPU utilization
+
+
+
+ps -ef - to list all the processes running in the machine
+
+
+top - cpu and memory utilization
+
+
+
+uname -a - all info about the system
+uname -r - only kernal version
+
+hostname
+
+ping ipaddress or hostname
+
+
+wget url - web download
+
+
+
+history - will give the hostory
+
+
+echo "string" - wil display the string
+
+
+shift + g - last line
+
+gg - fisrt line
+
+crtl + f - for page down
+
+ctri + b - for page up
+
+
+shift + h - first line of the current page
+
+shift + m - middle line of the current page
+
+shift + l - last line of the current page
+
+shift + $ - last char of the present list
+
+0 (zero) - first char of the present list
+
+
+yy - for coping the present line
+
+p - for paste
+
+u - undo
+
+ctrl + r - redo
+
+
+/ - for search
+
+n - next outputs
+shift + n - earlier outputs
+
+: linenumber to dorectly go to line
+
+
+shift + vG - select all
+
+w - jump word by word
+dw - delete word by word
+
+
+:%s/BUILD/build/- find and replace.
+
+
+vim -O file1 file2 - open two files at a time..one after one
+ctrl ww to go to second file
+
+:set number
+:set nonumber
+
+cd
+touch .vimrc
+
+vim .vimrc
+set number
+set slsearch
+set incsearch
+set tabstop=4
+
+
+
+
+
+
+git
+
+clone - download
+
+git clone https://github.com/nageshvkn/flipkart.git
+
+touch devops.txt
+
+git status
+
+source - reb
+
+untracked file
+
+git add devops.txt
+
+stage - green
+
+
+git commit -m "msg gg" devops.txt
+
+
+Process
+1.Clone Repository
+2.Create or modify
+3.Add the file from source to stage
+4.Commit the file
+5.Push
+
+Hi
+
+
+
+
